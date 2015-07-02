@@ -32,6 +32,8 @@ function handleText(textNode)
 	var v = textNode.nodeValue;
 
 	v = v.replace(/\bApple\b/g, "Bapple");
+	v = v.replace(/\bApp\b/g, "Bapp");
+	v = v.replace(/\bapp\b/g, "bapp");
 
 	textNode.nodeValue = v;
 }
