@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt",
+	"name": "Apple To Bapple",
 	"version": "1.0",
-	"description": "Replaces the text 'the cloud' with 'my butt'.",
-	"content_scripts": 
+	"description": "Replaces the text 'Apple' with 'Bapple'.",
+	"content_scripts":
 	[
 		{
 			"matches": ["*://*/*"],
