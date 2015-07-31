@@ -31,11 +31,9 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bApple\b/g, "Bapple");
-	v = v.replace(/\bApp\b/g, "Bapp");
-	v = v.replace(/\bapp\b/g, "bapp");
-	v = v.replace(/\bApps\b/g, "Bapps");
-	v = v.replace(/\bapps\b/g, "bapps");
+	v = v.replace(/\b[aA]pp(le|s)?\b/g, function(m) { 
+		return ( m.slice(0,1) == m.slice(0,1).toUpperCase() ? "Ba" : "ba" ) + m.slice(1);
+	})
 
 	textNode.nodeValue = v;
 }
